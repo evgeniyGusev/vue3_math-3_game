@@ -1,0 +1,64 @@
+@import './fonts';
+@import './themes/index';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: all .2s;
+
+  &:hover {
+    color: #444;
+  }
+}
+
+#app {
+  position: relative;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-rows: auto 0fr;
+  min-height: 100vh;
+  color: #000;
+}
+
+.title-yellow {
+  position: relative;
+  width: 320px;
+  margin-bottom: 10px;
+  background-size: contain;
+  font-family: "PF Din Text Comp Pro", sans-serif;
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+
+  @media screen and (max-width: 800px) {
+    font-size: 50px;
+  }
+}
